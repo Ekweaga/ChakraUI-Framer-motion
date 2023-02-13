@@ -7,6 +7,9 @@ import Header from "../components/Header"
 import Features from "../components/Features"
 import Content from "../components/Content"
 import Arrival from "../components/Arrival"
+import Headphone from "../components/Headphone"
+import Vibe from "../components/Vibe"
+import Footer from "../components/Footer"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +27,10 @@ export default function Home() {
   <Header/><br/>
   <Features/><br/>
   <Content/><br/>
-  <Arrival/>
+  <Arrival/><br/>
+  <Headphone/><br/><br/>
+  <Vibe/><br/><br/><br/><br/><br/>
+  <Footer/>
        
     </>
   )
