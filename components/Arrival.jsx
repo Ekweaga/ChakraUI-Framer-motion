@@ -81,7 +81,7 @@ function Arrival() {
         <Text fontWeight={'500'} fontSize={40}>Products Recommended For You</Text>
 
 
-        <Box display={'flex'} flexDirection={'row'} justifyContent={'center'} alignItems={'center'} gap={'100px'} marginTop={'70px'} as={motion.div} variants={arrivalboxAnimate} initial="hidden" whileInView="visible">
+        <Box display={'flex'} flexDirection={{base:'column',md:'row',lg:'row'}} justifyContent={'center'} alignItems={'center'} gap={'100px'} marginTop={'70px'} as={motion.div} variants={arrivalboxAnimate} initial="hidden" whileInView="visible">
             {
                 arrivals.map((item,index)=>{
                     return(

@@ -6,8 +6,8 @@ export default function Features (){
     return(
         <>
       
-            <Box width={'80%'} margin={'auto'} height={''} marginTop={''}>
-                <Flex gap={20}>
+            <Box width={'80%'} margin={'auto'} height={''} marginTop={{base:'50px'}}>
+                <Flex gap={20} flexDirection={{base:'column',md:'row',lg:'row'}}>
                     <Box display={'flex'} flexDirection={'row'} justifyContent={'center'} alignItems={'center'} gap={'20px'} width={'300px'}>
                         <div>
                             <Image src="/badge 1.png" width={60} height={50} alt="badge"/>

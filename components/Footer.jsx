@@ -8,7 +8,7 @@ function Footer(){
         <>
         <Box margin={'auto'} width={'80%'} padding={'20px'}>
             <Box>
-                <Flex gap={'150px'}>
+                <Flex gap={{base:'50px',md:'150px'}} flexDirection={{base:'column',md:'row',lg:'row'}}>
                     <Box>
                         <h1 style={{fontWeight:'700'}}>Company</h1><br/>
                         <ul style={{listStyle:'none',fontSize:'13px',display:'flex',flexDirection:'column',gap:'9px'}}>

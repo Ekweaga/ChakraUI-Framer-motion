@@ -135,7 +135,7 @@ function Vibe (){
                 <Box><h1 style={{fontWeight:'700',fontSize:'35px'}}>The boAthead Vibe</h1></Box>
 
                 <Box>
-                    <Flex flexDirection={'row'} justifyContent={'between'} alignItems={'center'} gap={'400px'} >
+                    <Flex flexDirection={{base:'column',md:'row',lg:'row'}} justifyContent={'between'} alignItems={'center'} gap={{base:'100px',md:'400px'}} >
                         <Box position={'relative'}>
                             <motion.div style={{marginLeft:60}} variants={image1Animate}><Image src="/download (1) 1.png" width={200} height={300} alt="image"/></motion.div>
                             <motion.div style={{marginTop:-40,marginLeft:-70}} variants={image2Animate}><Image src="/download (3) 1.png" width={200} height={300} alt="image"/></motion.div>

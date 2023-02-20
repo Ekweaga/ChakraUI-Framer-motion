@@ -142,16 +142,16 @@ function Headphone() {
   return (
    <>
    <Box width={'80%'} margin={'auto'} as={motion.div} variants={boxAnimate} initial="hidden" whileInView="visible">
-    <div style={{color:'#F0F0F0',textAlign:'center',fontSize:'200px'}} ><motion.h1 variants={headingAnimate} >headband</motion.h1></div>
+    <Box style={{color:'#F0F0F0',textAlign:'center'}} fontSize={{base:'70px',md:'200px'}} ><motion.h1 variants={headingAnimate} >headband</motion.h1></Box>
 
     <Box>
-        <Flex flexDirection={'row'} justifyContent={'center'} alignItems={'center'}>
+        <Flex flexDirection={{base:'column',md:'row',lg:'row'}} justifyContent={'center'} alignItems={'center'} >
             <Box as ={motion.div} variants={paraAnimate}>
                 <Text fontWeight={'700'} fontSize={'25px'}>Wireless <br/>
 Entertainment</Text>
 <p  style={{width:'300px'}}>Using Bluetooth technology, connect your smart </p>
 </Box>
-            <Box  marginTop={'-260px'} marginLeft={'-30px'} as={motion.div} variants={imageAnimate}><Image src="/Banner3-product-_3_e8e08bc4-cf14-4ae2-84fa-55e75559f065 1.png" width={700} height={300} alt="icon"/></Box>
+            <Box  marginTop={{base:'0px',md:'-260px'}} marginLeft={'-30px'} as={motion.div} variants={imageAnimate}><Image src="/Banner3-product-_3_e8e08bc4-cf14-4ae2-84fa-55e75559f065 1.png" width={700} height={300} alt="icon"/></Box>
             <Box as ={motion.div} variants={paraAnimate}>
             <Text fontWeight={'700'} fontSize={'25px'}>Lightweight and <br/>
 Portable</Text>
@@ -160,8 +160,8 @@ Portable</Text>
         </Flex>
     </Box>
 
-    <Box>
-        <Flex flexDirection={'row'} justifyContent={'center'} alignItems={'center'} gap={'100px'}>
+    <Box marginTop={{base:10}}>
+        <Flex flexDirection={{base:'column',md:'row',lg:'row'}} justifyContent={'center'} alignItems={'center'} gap={'100px'}>
             {
                 phoneBlogs.map((item,index)=>{
                     return(
